@@ -1,0 +1,107 @@
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+   <head>
+      <title> Formularios </title>
+   </head>
+
+   <body>
+      <h1>
+         Batos para la compara
+      </h1>
+
+      <form name="formulario" action="mailto:destino@servidor.com?subject=prueba" method="post" enctype="multipart/form-data">
+
+         <fieldset>
+            <legend>Datos del cliente</legend>
+
+            <table width=740 border=0 cellpadding=5>
+
+               <tr> 
+                  <td align="right" width=164>
+                     Nombre completo:
+                  </td>
+
+                  <td colspan=3>
+                     <input type="text" name="nombre_usuario" size=20 maxlength=50 tabindex=1>
+                  </td>
+                  
+                  <td width=162 align="right">
+                     Número de telefono:
+                  </td>
+
+                  <td colspan=3> 
+                     <input type="text" name="telefono_usuario" size=20 maxlength=50 tabindex=2>
+                  </td>
+
+                  <td width=162 align="right">
+                     Dirección:
+                  </td>
+
+                  <td colspan=3> 
+                     <input type="text" name="direccion_usuario" size=40 maxlength=50 tabindex=3>
+                  </td>
+               </tr>
+            </table>
+
+         </fieldset>
+         <br>
+         <fieldset>
+            <legend>Batos del producto</legend>
+
+            <table width=740 border=0 cellpadding=5>
+
+               <tr> 
+                  <td align="right" rowspan=2 valign="top" width=164>
+                     Indique su <u>p</u>roducto:
+                  </td>
+
+                  <td width=80 rowspan=2 valign="top"> 
+                     <select name="batos productos" tabindex=11 accesskey="p">
+                        <option value="1">Tarjetas de One Piece</option>
+                        <option value="2">Fundas para tarjetas</option>
+                        <option value="3">Deckbox</option>
+                     </select>
+                  </td>
+
+                  <td align="right" rowspan=2 valign="top" width=164>
+                     Cantidad:
+                  </td>
+
+                  <td width=115 rowspan=2> 
+                     <select name="batos productos" tabindex=12 accesskey="p">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">más de 10</option>
+                     </select>
+                  </td>
+
+                  <td colspan=2 rowspan=2>
+                     &nbsp;
+                  </td>
+               </tr>
+
+               <tr> 
+                  <td width=101>
+                     &nbsp;
+                  </td>
+               </tr>
+
+               <tr> 
+                  <td colspan=4> 
+                     <input type="submit" name="mandar" value="Enviar" tabindex=13>
+                  </td>
+
+                  <td colspan=2> 
+                     <input type="reset" name="borrado" value="Borrar" tabindex=14>
+                  </td>
+               </tr>
+
+            </table>
+            <input type="hidden" name="escondido" value="oculto">
+
+         </fieldset>
+      </form>
+   </body>
+</html>
