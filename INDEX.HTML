@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<Head>
+<meta charset="utf-8"><!--Mayor reconocimiento de caracteres-->
+<meta name="author" content="Federico Ledesma"/>
+<meta naem="viewport" content="width=device-width,initial-scale=1"/><!--diseño-->
+<meta name="keywords" content ="Tecnologias, educación, investigacion"/>
+<Title>  </title>
+<style>
+<BODY> 
+body id="body">
+    
+    <header>
+        <div class="icon__menu">
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+    </header>
+
+    <div class="menu__side" id="menu_side">
+        <div class="options__menu">	
+
+            <a href="INDEX.HTML" target="_blank" class="selected">
+                <div class="option">
+                    <h4>INICIO</h4>
+                </div>
+            </a>
+
+            <a href="preventas.HTML" target="_blank">
+                <div class="option">
+                    <h4>PREVENTAS</h4>
+                </div>
+            </a>
+            
+            <a href="PRODUCTOS NUEVOS.HTML" target="_blank">
+                <div class="option">
+                    <h4>PRODUCTOS NUEVOS</h4>
+                </div>
+            </a>
+
+            <a href="STARTER DECKS.HTML" target="_blank">
+                <div class="option">
+                    <h4>STARTER DECKS</h4>
+                </div>
+            </a>
+
+            <a href="COMPLEMENTOS.HTML">
+                <div class="option">
+                    <h4>CAJAS DE EXPANSION</h4>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="option">
+                    <h4>REVIEW</h4>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+<MAIN>
+body {
+
+            text-align: center;
+
+            background-image: url('https://media.istockphoto.com/id/1035676256/es/foto/https://www.freepik.es/foto-gratis/fondo-galaxia-espacial_4414004.htm#query=galaxia&position=10&from_view=keyword&track=sph&uuid=1f8574a9-c9f6-4584-b2f5-5b6106ebc288=');
+
+            /* Enlace de tu imagen de fondo */
+
+            background-size: cover;
+
+            background-repeat: no-repeat;
+
+            background-attachment: fixed; /* Mantener la imagen fija */
+
+            color: #FFFFFF;
+
+            /* Cambiado para que el texto sea visible en la imagen de fondo */
+
+            margin: 0; /* Eliminar el margen predeterminado del cuerpo */
+
+        }
+     {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .menu {
+      background-color: #333;
+      color: #fff;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      top: 0;
+      overflow-y: auto;
+    }
+    .menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .menu ul li {
+      padding: 10px;
+      border-bottom: 1px solid #555;
+    }
+    .menu ul li:hover {
+      background-color: #555;
+      cursor: pointer;
+    }
+    .menu ul li a {
+      text-decoration: none;
+      color: #fff;
+    } 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    margin-left: 80px;
+    margin-top: 80px;
+    transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+main{
+    padding: 20px;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 200;
+}
+
+.icon__menu{
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(10px);
+}
+
+.icon__menu i{
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.menu__side{
+    width: 80px;
+    height: 100%;
+    background: #1783db;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 18px;
+    z-index: 300;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-right: 20px solid #1783db;
+    transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+/*Ocultar scroll para chrome, safari y opera*/
+.menu__side::-webkit-scrollbar{
+    display: none;
+}
+
+/*Ocultar scroll para IE, Edge y Firefox*/
+.menu__side{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+.name__page{
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.name__page i{
+    width: 20px;
+    margin-right: 20px;
+}
+
+.options__menu{
+    padding: 20px 30px;
+    position: absolute;
+    top: 80px;
+}
+
+.options__menu a{
+    color: #ffffffb2;
+    cursor: default;
+    display: block;
+    position: relative;
+    transition: color 300ms;
+}
+
+.options__menu a:hover{
+    color: white;
+}
+
+.options__menu .option{
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.options__menu .option i{
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.options__menu .option h4{
+    font-weight: 300;
+    cursor: pointer;
+}
+
+a.selected{
+    color: #fff;
+}
+
+.selected:before{
+    content: '';
+    width: 3px;
+    height: 80%;
+    background: white;
+    position: absolute;
+    top: 10%;
+    left: -30px;
+}
+
+/*Clases para usar en JavaScript*/
+
+.body_move{
+    margin-left: 250px;
+}
+
+.menu__side_move{
+    width: 250px;
+}
+
+
+@media screen and (max-width: 760px){
+    .body_move{
+        margin-left: 0px;
+    }
+
+    .menu__side_move{
+        width: 80px;
+        left: -80px;
+    }
+}
+  </style>
+
+</head>
+<body>
+
+<div class="menu">
+  <ul>
+ <li><a href="#"> <a href="INDEX.HTML"target="_blank">INICIO</a></li>
+    <li><a href="#"> <a href="preventas.HTML"target="_blank">PREVENTAS</a></li>
+   <li><a href="#">  <a href="PRODUCTOS NUEVOS.HTML"target="_blank">PRODUCTOS NUEVOS </a></li>
+    <li><a href="#"> <a href="STARTER DECKS.HTML"target="_blank">STARTER DECKS</a></li>
+    <li><a href="#"> <a href="COMPLEMENTOS.HTML" target="_blank">COMPLEMENTOS</a></li>
+    <li><a href="#"> <a href="CAJAS DE EXPANSION.HTML" target="_blank">CAJAS DE EXPANSION</a></li>
+ <li><a href="#"> <a href="formulario.HTML" target="_blank">REVIEW</a></li>
+
+
+
+<div style="text-align: center;">
+<a href="https://www.facebook.com/profile.php?id=100070969219613&mibextid=zLoPMf" target="_blank">
+<img src="https://firebasestorage.googleapis.com/v0/b/cleaning-8637f.appspot.com/o/img%2FLogoFacebook.jpg?alt=media&token=5cb26300-9467-469f-a450-84c6f2d09bf7" alt="Facebook" width="20" height="20"></a>
+</div>
+
+
+ 
+  </ul>
+</div>
+
+
+</head>
+<BODY>
+<Body>
+<body bgcolor="#4AC4FC" text="000000">
+<B><Font FACE="ALGERIAN" SIZE=4 Color="BLACK">
+
+
+<FRAMESET rows=550,* >
+<frame src="INDEX1.html">
+</FRAMESET>
+
+<H1 ALIGN=right> 
+<td align=right>
+<TABLE BORDER=10 WIDTH=600  align= "center" bgcolor= "FFFFFF" 						BORDERCOLOR="RED"> 
+			<tr>
+	<td heigth=100 width=100> PREVENTAS  </td>
+			
+	</tr>
+
+	</H1>
+		<H1 align=CENTER	>
+		<IMG SRC="img/GALA.JPEG" HEIGTH="240px" WIDTH="220px">
+				GALATEA STORE 
+		</H1>
+<H3 align=RIGHT>
+<align= RIGHT><IMG SRC ="img/DECKBOXYAMATO (2).PNG" "HEIGHT="390px" WIDTH="360px"> 
+
+
+<align= RIGHT> <IMG SRC="img/OP03.PNG" "HEIGHT="460px" WIDTH="540px"  > 
+
+<IMG SRC="img/SANJIZORO.PNG" "HEIGHT="140px"WIDTH="210px"> 
+</H3 >
+
+
+
+<align=right><TABLE BORDER=10 WIDTH=600  align= "center" bgcolor= "FFFFFF" 						BORDERCOLOR="RED"> 
+			<tr>
+			<td heigth=100 width=100> PRODUCTOS NUEVOS </td>
+			
+	</td> 
+
+
+<H4 align=RIGHT>
+
+<IMG SRC="img/SOBREOP03.PNG" "HEIGHT="190px" WIDTH="160px"> 
+
+<IMG SRC="img/SOBREOP04.PNG" "HEIGHT="290px" WIDTH="260px"> 
+
+
+<TABLE BORDER=10 WIDTH=600  align= "center" bgcolor= "FFFFFF" 						BORDERCOLOR="RED"> 
+			<tr>
+			<td heigth=100 width=100> STARTER DECKS</td>
+			
+	</td>
+
+
+	<ALIGN= CENTER> <IMG SRC="img/STO3.PNG" "HEIGHT="180px" WIDTH="200px"> 
+
+<IMG SRC="img/ST04.PNG" "HEIGHT="190px" WIDTH="200px"> 
+
+<IMG SRC="img/ST09.PNG" "HEIGHT="200px" WIDTH="180px"> 
+
+<IMG SRC="IMG/STCR.PNG" "HEIGHT="150px" WIDTH="200px"> 
+
+<script src="script.js"></script>
+
+</html>
