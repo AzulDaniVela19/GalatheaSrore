@@ -1,0 +1,25 @@
+/* Estilo para el contenedor de imágenes */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Estilo para las imágenes */
+.image-container img {
+  width: 200px; /* Modifica el tamaño según sea necesario */
+  height: auto;
+  margin: 0 10px; /* Espaciado entre las imágenes */
+  animation: moveImage 2s ease-in-out infinite alternate; /* Animación */
+}
+
+/* Definición de la animación */
+@keyframes moveImage {
+  from {
+    transform: translateX(0); /* Posición inicial */
+  }
+  to {
+    transform: translateX(20px); /* Posición final (puedes ajustar la cantidad de movimiento) */
+  }
+}
