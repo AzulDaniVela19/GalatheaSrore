@@ -7,162 +7,145 @@
       <meta name="keywords" content ="Tecnologias, educación, investigacion"/>
       <title> Formularios </title>
    </head>
-   <style type="text/css">
-			
-			* {
-				margin:0px;
-				padding:0px;
-			}
-			
-			#header {
-				margin:auto;
-				width:500px;
-				font-family:Arial, Helvetica, sans-serif;
-			}
-			
-			ul, ol {
-				list-style:none;
-			}
-			
-			.nav > li {
-				float:left;
-			}
-			
-			.nav li a {
-				background-color:#000;
-				color:#fff;
-				text-decoration:none;
-				padding:10px 12px;
-				display:block;
-			}
-			
-			.nav li a:hover {
-				background-color:#434343;
-			}
-			
-			.nav li ul {
-				display:none;
-				position:absolute;
-				min-width:140px;
-			}
-			
-			.nav li:hover > ul {
-				display:block;
-			}
-			
-			.nav li ul li {
-				position:relative;
-			}
-			
-			.nav li ul li ul {
-				right:-140px;
-				top:0px;
-			}
-			
-		</style>
+   <style>
+	   * {
+		   margin:0px;
+		   padding:0px;
+	   }
+	   
+	   ul, ol {
+		   list-style:none;
+	   }
+	   
+	   .nav > li {
+		   float:left;
+	   }
+	   
+	   .nav li a {
+		   text-decoration:none;
+		   padding:10px 12px;
+		   display:block;
+	   }
+	   
+	   .nav li a:hover {
+		   background-color:#434343;
+	   }
+	   
+	   .nav li ul {
+		   display:none;
+		   position:absolute;
+		   min-width:140px;
+	   }
+	   .nav li:hover > ul {
+		   display:block;
+	   }
+	   
+	   .nav li ul li {
+		   position:relative;
+	   }
+	   
+	   .nav li ul li ul {
+		   right:-140px;
+		   top:0px;
+	   }
+   </style>
    <body>
-		<div id="header">
-			<ul class="nav">
-				<li><a href="index.html">INICIO</a></li>
-				<li><a href="">PRODUCTOS</a>
-					<ul>
-						<li><a href="PREVENTAS.HTML">PREVENTAS</a></li>
-						<li><a href="PRODUCTOS NUEVOS.HTML">PRODUCTOS NUEVOS</a></li>
-						<li><a href="STARTER DECKS.HTML">STARTER DECKS</a></li>
-						<li><a href="COMPLEMENTOS.HTML">COMPLEMENTOS</a>
-                  <li><a href="CAJAS DE EXPANSION.HTML">CAJAS DE EXPANSION</a>
-                  <li><a href="formulario.html">FORMULARIO DE COMPRA</a> 
-					</ul>
-            <li style="text-align: center;><a href="https://www.facebook.com/share/mnTnmo1FvYMCfhUo/?mibextid=6GVB1S" target="_blank"><img src="https://firebasestorage.googleapis.com/v0/b/cleaning-8637f.appspot.com/o/img%2FLogoFacebook.jpg?alt=media&token=5cb26300-9467-469f-a450-84c6f2d09bf7" alt="Facebook" width="20" height="20"></a></li>
-			</ul>
-		</div>
-      <h1 align="center">
-         Batos para la compara
-      </h1>
-      
-      <fieldset>
-         <legend align="center">Datos del cliente</legend>
-         <table width=180 border=0 cellpadding=5 align="center">
-            <tr>
-               <td width=122>
-                     Nombre completo:
-                  </td>
-
-                  <td colspan=3>
-                     <input type="text" name="nombre_usuario" size=20 maxlength=20 tabindex=1>
-                  </td>
-                  
-                  <td width=122>
-                     Número de telefono:
-                  </td>
-
-                  <td colspan=3> 
-                     <input type="text" name="telefono_usuario" size=20 maxlength=20 tabindex=2>
-                  </td>
-
-                  <td width=122>
-                     Dirección:
-                  </td>
-
-                  <td colspan=3> 
-                     <input type="text" name="direccion_usuario" size=40 maxlength=20 tabindex=3>
-                  </td>
-               </tr>
-            </table>
-
-         </fieldset>
-         <br>
-         <fieldset>
-            <legend align="center">Batos del producto</legend>
-
-            <table width=180 border=0 cellpadding=5 align="center">
-
-               <tr> 
-                  <td rowspan=2 valign="top" width=124>
-                     Indique su <u>p</u>roducto:
-                  </td>
-
-                  <td width=80 rowspan=2 valign="top"> 
-                     <select name="batos productos" tabindex=11 accesskey="p">
-                        <option value="1">Tarjetas de One Piece</option>
-                        <option value="2">Fundas para tarjetas</option>
-                        <option value="3">Deckbox</option>
-                     </select>
-                  </td>
-
-                  <td align="right" rowspan=2 valign="top" width=164>
-                     Cantidad:
-                  </td>
-
-                  <td width=115 rowspan=2> 
-                     <select name="batos productos" tabindex=12 accesskey="p">
-                        <option value="1" align="center">1</option>
-                        <option value="2" align="center">2</option>
-                        <option value="3" align="center">3</option>
-                        <option value="4" align="center">4</option>
-                        <option value="5" align="center">5</option>
-                        <option value="6" align="center">más de 10</option>
-                     </select>
-                  </td>
-                  <td colspan=2 rowspan=2>
-                     &nbsp;
-                  </td>
-               </tr>
-               <tr> 
-                  <td width=101 align="center">
-                     &nbsp;
-                  </td>
-               </tr>
-               <tr> 
-                  <td colspan=4 align="center"> 
-                     <input type="submit" name="mandar" value="Enviar" tabindex=13>
-                  </td>
-                  <td colspan=2 align="center"> 
-                     <input type="reset" name="borrado" value="Borrar" tabindex=14>
-                  </td>
-               </tr>
-            </table>
-         </fieldset>
-      </form>
-	</body>
+	   <div id="header">
+		   <ul class="nav">
+			   <li><a href="index.html">INICIO</a></li>
+			   <li><a href="">PRODUCTOS</a>
+				   <ul>
+					   <li><a href="PREVENTAS.HTML">PREVENTAS</a></li>
+					   <li><a href="PRODUCTOS NUEVOS.HTML">PRODUCTOS NUEVOS</a></li>
+					   <li><a href="STARTER DECKS.HTML">STARTER DECKS</a></li>
+					   <li><a href="COMPLEMENTOS.HTML">COMPLEMENTOS</a>
+					   <li><a href="CAJAS DE EXPANSION.HTML">CAJAS DE EXPANSION</a>
+					   <li><a href="formulario.html">FORMULARIO DE COMPRA</a>
+				   </ul>
+			   <li style="text-align: center;><a href="https://www.facebook.com/share/mnTnmo1FvYMCfhUo/?mibextid=6GVB1S" target="_blank"><img src="https://firebasestorage.googleapis.com/v0/b/cleaning-8637f.appspot.com/o/img%2FLogoFacebook.jpg?alt=media&token=5cb26300-9467-469f-a450-84c6f2d09bf7" alt="Facebook" width="20" height="20"></a></li>
+		   </ul>
+	   </div>
+	   <h1 align="center">
+		   Batos para la compara
+	   </h1>
+	   
+	   <fieldset>
+		   <legend align="center">Datos del cliente</legend>
+		   <table width=180 border=0 cellpadding=5 align="center">
+			   <tr>
+				   <td width=122>
+					   Nombre completo:
+				   </td>
+				   
+				   <td colspan=3>
+					   <input type="text" name="nombre_usuario" size=20 maxlength=20 tabindex=1>
+				   </td>
+				   
+				   <td width=122>
+					   Número de telefono:
+				   </td>
+				   
+				   <td colspan=3> 
+					   <input type="text" name="telefono_usuario" size=20 maxlength=20 tabindex=2>
+				   </td>
+				   
+				   <td width=122>
+					   Dirección:
+				   </td>
+				   
+				   <td colspan=3>
+					   <input type="text" name="direccion_usuario" size=40 maxlength=20 tabindex=3>
+				   </td>
+			   </tr>
+		   </table>
+	   </fieldset>
+	   <br>
+	   <fieldset>
+		   <legend align="center">Batos del producto</legend>
+		   <table width=180 border=0 cellpadding=5 align="center">
+			   <tr>
+				   <td rowspan=2 valign="top" width=124>
+					   Indique su <u>p</u>roducto:
+				   </td>
+				   <td width=80 rowspan=2 valign="top"> 
+					   <select name="batos productos" tabindex=11 accesskey="p">
+						   <option value="1">Tarjetas de One Piece</option>
+						   <option value="2">Fundas para tarjetas</option>
+						   <option value="3">Deckbox</option>
+					   </select>
+				   </td>
+				   <td align="right" rowspan=2 valign="top" width=164>
+					   Cantidad:
+				   </td>
+				   <td width=115 rowspan=2> 
+					   <select name="batos productos" tabindex=12 accesskey="p">
+						   <option value="1" align="center">1</option>
+						   <option value="2" align="center">2</option>
+                        			   <option value="3" align="center">3</option>
+                        			   <option value="4" align="center">4</option>
+                        		   	   <option value="5" align="center">5</option>
+						   <option value="6" align="center">más de 10</option>
+					   </select>
+				   </td>
+				   <td colspan=2 rowspan=2>
+					   &nbsp;
+				   </td>
+			   </tr>
+			   <tr>
+				   <td width=101 align="center">
+					   &nbsp;
+				   </td>
+			   </tr>
+			   <tr>
+				   <td colspan=4 align="center">
+					   <input type="submit" name="mandar" value="Enviar" tabindex=13>
+				   </td>
+				   <td colspan=2 align="center">
+					   <input type="reset" name="borrado" value="Borrar" tabindex=14>
+				   </td>
+			   </tr>
+		   </table>
+	   </fieldset>
+   </form>
+   </body>
 </html>
